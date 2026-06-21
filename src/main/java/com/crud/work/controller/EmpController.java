@@ -51,7 +51,7 @@ public class EmpController {
 		return service.createEmployee(ee);
 	}
 	
-	@DeleteMapping
+	@DeleteMapping("/{id}")
 	public void DelEmployee(@PathVariable Long id) {
 		service.DelEmp(id);
 	}
