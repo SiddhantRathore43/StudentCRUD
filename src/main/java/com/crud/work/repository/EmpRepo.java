@@ -8,5 +8,11 @@ import com.crud.work.entity.Employee;
 import com.crud.work.enums.Department;
 
 public interface EmpRepo extends JpaRepository<Employee,Long> {
+	
 	 List<Employee> findByDepartment(Department department);
+	 
+	 List<Employee> findAllByOrderBySalaryDesc();
+	 
+	 List<Employee> findAllByOrderBySalaryAsc();
+
 }

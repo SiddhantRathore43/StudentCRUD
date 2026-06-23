@@ -49,4 +49,15 @@ public class EmpService {
 	public List<Employee> getByDepartment(Department department) {
 	    return repo.findByDepartment(department);
 	}
+	
+	public List<Employee> sortBySalaryDesc(){
+		return repo.findAllByOrderBySalaryDesc();
+	}
+	
+	public List<Employee> sortBySalaryAsc(){
+		return repo.findAllByOrderBySalaryAsc();
+	}
+	
+ 
+	
 }

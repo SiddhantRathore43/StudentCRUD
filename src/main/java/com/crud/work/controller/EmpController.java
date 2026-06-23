@@ -55,5 +55,17 @@ public class EmpController {
 	public void DelEmployee(@PathVariable Long id) {
 		service.DelEmp(id);
 	}
+	
+	 @GetMapping("/salary-desc")
+	    public List<Employee> getSalaryDesc() {
+	        return service.sortBySalaryDesc();
+	    
+				}
+	 
+	 @GetMapping("/salary-Asc")
+	    public List<Employee> getSalaryAsc() {
+	        return service.sortBySalaryAsc();
+	    
+				}
 }
 

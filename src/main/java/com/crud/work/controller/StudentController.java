@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.crud.work.entity.Employee;
 import com.crud.work.entity.Student;
 import com.crud.work.service.StudentService;
 
@@ -51,4 +52,8 @@ public class StudentController {
 	public Student updateStudent(@RequestBody Student ss, @PathVariable Long id) {
 		return service.updateStudent(ss, id);
 	}
+	
+	
+	 
+	 
 }
